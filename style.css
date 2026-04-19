@@ -1,0 +1,167 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#000;
+  color:#fff;
+}
+
+/* NAV */
+.nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+
+.logo{
+  font-family:'Playfair Display';
+  font-size:20px;
+  color:gold;
+}
+
+.call-btn{
+  color:#000;
+  background:gold;
+  padding:10px 15px;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:3rem;
+  font-family:'Playfair Display';
+}
+
+.hero p{
+  margin:10px 0 20px;
+  opacity:0.8;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* BUTTONS */
+.btn{
+  background:gold;
+  color:#000;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn.secondary{
+  background:transparent;
+  border:2px solid gold;
+  color:gold;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.section.dark{
+  background:#111;
+}
+
+h2{
+  font-family:'Playfair Display';
+  margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#111;
+  padding:30px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+  background:#1a1a1a;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.phone{
+  font-size:22px;
+  color:gold;
+  margin:20px 0;
+}
+
+/* FLOAT BUTTON */
+.float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+  }
